@@ -1,1 +1,1 @@
-Extracted from my (https://github.com/Reginald-Blechman/BoosterX)[BoosterX deobfuscation], implements Nvidia Panel in the app itself.
+Extracted from my [BoosterX deobfuscation](https://github.com/Reginald-Blechman/BoosterX), implements Nvidia Panel in the app itself.
