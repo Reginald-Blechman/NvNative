@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000004 RID: 4
+	public enum EValues_OGL_AA_LINE_GAMMA : uint
+	{
+		// Token: 0x04000069 RID: 105
+		OGL_AA_LINE_GAMMA_DISABLED = 16U,
+		// Token: 0x0400006A RID: 106
+		OGL_AA_LINE_GAMMA_ENABLED = 35U,
+		// Token: 0x0400006B RID: 107
+		OGL_AA_LINE_GAMMA_MIN = 1U,
+		// Token: 0x0400006C RID: 108
+		OGL_AA_LINE_GAMMA_MAX = 100U,
+		// Token: 0x0400006D RID: 109
+		OGL_AA_LINE_GAMMA_NUM_VALUES = 4U,
+		// Token: 0x0400006E RID: 110
+		OGL_AA_LINE_GAMMA_DEFAULT = 16U
+	}
+}

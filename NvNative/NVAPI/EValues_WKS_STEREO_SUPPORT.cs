@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000048 RID: 72
+	public enum EValues_WKS_STEREO_SUPPORT : uint
+	{
+		// Token: 0x040002A0 RID: 672
+		WKS_STEREO_SUPPORT_OFF,
+		// Token: 0x040002A1 RID: 673
+		WKS_STEREO_SUPPORT_ON,
+		// Token: 0x040002A2 RID: 674
+		WKS_STEREO_SUPPORT_NUM_VALUES,
+		// Token: 0x040002A3 RID: 675
+		WKS_STEREO_SUPPORT_DEFAULT = 0U
+	}
+}

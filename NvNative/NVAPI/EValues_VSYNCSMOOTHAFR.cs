@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000041 RID: 65
+	public enum EValues_VSYNCSMOOTHAFR : uint
+	{
+		// Token: 0x04000263 RID: 611
+		VSYNCSMOOTHAFR_OFF,
+		// Token: 0x04000264 RID: 612
+		VSYNCSMOOTHAFR_ON,
+		// Token: 0x04000265 RID: 613
+		VSYNCSMOOTHAFR_NUM_VALUES,
+		// Token: 0x04000266 RID: 614
+		VSYNCSMOOTHAFR_DEFAULT = 0U
+	}
+}

@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000014 RID: 20
+	public enum EValues_OGL_TRIPLE_BUFFER : uint
+	{
+		// Token: 0x040000D2 RID: 210
+		OGL_TRIPLE_BUFFER_DISABLED,
+		// Token: 0x040000D3 RID: 211
+		OGL_TRIPLE_BUFFER_ENABLED,
+		// Token: 0x040000D4 RID: 212
+		OGL_TRIPLE_BUFFER_NUM_VALUES,
+		// Token: 0x040000D5 RID: 213
+		OGL_TRIPLE_BUFFER_DEFAULT = 0U
+	}
+}

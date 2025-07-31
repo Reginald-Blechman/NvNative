@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000012 RID: 18
+	public enum EValues_OGL_THREAD_CONTROL : uint
+	{
+		// Token: 0x040000C4 RID: 196
+		OGL_THREAD_CONTROL_ENABLE = 1U,
+		// Token: 0x040000C5 RID: 197
+		OGL_THREAD_CONTROL_DISABLE,
+		// Token: 0x040000C6 RID: 198
+		OGL_THREAD_CONTROL_NUM_VALUES = 2U,
+		// Token: 0x040000C7 RID: 199
+		OGL_THREAD_CONTROL_DEFAULT = 0U
+	}
+}

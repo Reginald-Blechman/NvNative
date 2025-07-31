@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000051 RID: 81
+	public enum EValues_PS_SHADERDISKCACHE : uint
+	{
+		// Token: 0x040002D3 RID: 723
+		PS_SHADERDISKCACHE_OFF,
+		// Token: 0x040002D4 RID: 724
+		PS_SHADERDISKCACHE_ON,
+		// Token: 0x040002D5 RID: 725
+		PS_SHADERDISKCACHE_NUM_VALUES,
+		// Token: 0x040002D6 RID: 726
+		PS_SHADERDISKCACHE_DEFAULT = 1U
+	}
+}

@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x0200002C RID: 44
+	public enum EValues_NV_QUALITY_UPSCALING : uint
+	{
+		// Token: 0x040001B0 RID: 432
+		NV_QUALITY_UPSCALING_OFF,
+		// Token: 0x040001B1 RID: 433
+		NV_QUALITY_UPSCALING_ON,
+		// Token: 0x040001B2 RID: 434
+		NV_QUALITY_UPSCALING_NUM_VALUES,
+		// Token: 0x040001B3 RID: 435
+		NV_QUALITY_UPSCALING_DEFAULT = 0U
+	}
+}

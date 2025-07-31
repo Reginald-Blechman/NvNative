@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x0200000B RID: 11
+	public enum EValues_OGL_FORCE_STEREO : uint
+	{
+		// Token: 0x04000098 RID: 152
+		OGL_FORCE_STEREO_OFF,
+		// Token: 0x04000099 RID: 153
+		OGL_FORCE_STEREO_ON,
+		// Token: 0x0400009A RID: 154
+		OGL_FORCE_STEREO_NUM_VALUES,
+		// Token: 0x0400009B RID: 155
+		OGL_FORCE_STEREO_DEFAULT = 0U
+	}
+}

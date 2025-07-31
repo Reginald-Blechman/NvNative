@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000024 RID: 36
+	public enum EValues_EXPORT_PERF_COUNTERS : uint
+	{
+		// Token: 0x04000187 RID: 391
+		EXPORT_PERF_COUNTERS_OFF,
+		// Token: 0x04000188 RID: 392
+		EXPORT_PERF_COUNTERS_ON,
+		// Token: 0x04000189 RID: 393
+		EXPORT_PERF_COUNTERS_NUM_VALUES,
+		// Token: 0x0400018A RID: 394
+		EXPORT_PERF_COUNTERS_DEFAULT = 0U
+	}
+}

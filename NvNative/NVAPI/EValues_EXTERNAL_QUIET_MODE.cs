@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000025 RID: 37
+	public enum EValues_EXTERNAL_QUIET_MODE : uint
+	{
+		// Token: 0x0400018C RID: 396
+		EXTERNAL_QUIET_MODE_ON = 1U,
+		// Token: 0x0400018D RID: 397
+		EXTERNAL_QUIET_MODE_OFF = 0U,
+		// Token: 0x0400018E RID: 398
+		EXTERNAL_QUIET_MODE_NUM_VALUES = 2U,
+		// Token: 0x0400018F RID: 399
+		EXTERNAL_QUIET_MODE_DEFAULT = 0U
+	}
+}

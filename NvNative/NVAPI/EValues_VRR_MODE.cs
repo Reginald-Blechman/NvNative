@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000040 RID: 64
+	public enum EValues_VRR_MODE : uint
+	{
+		// Token: 0x0400025D RID: 605
+		VRR_MODE_DISABLED,
+		// Token: 0x0400025E RID: 606
+		VRR_MODE_FULLSCREEN_ONLY,
+		// Token: 0x0400025F RID: 607
+		VRR_MODE_FULLSCREEN_AND_WINDOWED,
+		// Token: 0x04000260 RID: 608
+		VRR_MODE_NUM_VALUES,
+		// Token: 0x04000261 RID: 609
+		VRR_MODE_DEFAULT = 1U
+	}
+}

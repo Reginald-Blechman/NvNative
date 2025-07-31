@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x0200004B RID: 75
+	public enum EValues_AO_MODE_ACTIVE : uint
+	{
+		// Token: 0x040002B4 RID: 692
+		AO_MODE_ACTIVE_DISABLED,
+		// Token: 0x040002B5 RID: 693
+		AO_MODE_ACTIVE_ENABLED,
+		// Token: 0x040002B6 RID: 694
+		AO_MODE_ACTIVE_NUM_VALUES,
+		// Token: 0x040002B7 RID: 695
+		AO_MODE_ACTIVE_DEFAULT = 0U
+	}
+}

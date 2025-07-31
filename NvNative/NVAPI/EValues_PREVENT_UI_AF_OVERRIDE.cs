@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000030 RID: 48
+	public enum EValues_PREVENT_UI_AF_OVERRIDE : uint
+	{
+		// Token: 0x040001CA RID: 458
+		PREVENT_UI_AF_OVERRIDE_OFF,
+		// Token: 0x040001CB RID: 459
+		PREVENT_UI_AF_OVERRIDE_ON,
+		// Token: 0x040001CC RID: 460
+		PREVENT_UI_AF_OVERRIDE_NUM_VALUES,
+		// Token: 0x040001CD RID: 461
+		PREVENT_UI_AF_OVERRIDE_DEFAULT = 0U
+	}
+}

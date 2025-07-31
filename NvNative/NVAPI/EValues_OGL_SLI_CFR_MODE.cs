@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000010 RID: 16
+	public enum EValues_OGL_SLI_CFR_MODE : uint
+	{
+		// Token: 0x040000B7 RID: 183
+		OGL_SLI_CFR_MODE_DISABLE,
+		// Token: 0x040000B8 RID: 184
+		OGL_SLI_CFR_MODE_ENABLE,
+		// Token: 0x040000B9 RID: 185
+		OGL_SLI_CFR_MODE_CLASSIC_SFR,
+		// Token: 0x040000BA RID: 186
+		OGL_SLI_CFR_MODE_NUM_VALUES,
+		// Token: 0x040000BB RID: 187
+		OGL_SLI_CFR_MODE_DEFAULT = 0U
+	}
+}

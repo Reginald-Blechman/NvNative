@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46980D09-BCBA-4479-B071-C8A8E832A6A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NvidiaX.NVIDIA.Native</RootNamespace>
+    <AssemblyName>NvNative</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NativeArrayHelper.cs" />
+    <Compile Include="NVAPI\ESetting.cs" />
+    <Compile Include="NVAPI\EValues_AA_BEHAVIOR_FLAGS.cs" />
+    <Compile Include="NVAPI\EValues_AA_MODE_ALPHATOCOVERAGE.cs" />
+    <Compile Include="NVAPI\EValues_AA_MODE_GAMMACORRECTION.cs" />
+    <Compile Include="NVAPI\EValues_AA_MODE_METHOD.cs" />
+    <Compile Include="NVAPI\EValues_AA_MODE_REPLAY.cs" />
+    <Compile Include="NVAPI\EValues_AA_MODE_SELECTOR.cs" />
+    <Compile Include="NVAPI\EValues_AA_MODE_SELECTOR_SLIAA.cs" />
+    <Compile Include="NVAPI\EValues_ANISO_MODE_LEVEL.cs" />
+    <Compile Include="NVAPI\EValues_ANISO_MODE_SELECTOR.cs" />
+    <Compile Include="NVAPI\EValues_ANSEL_ALLOW.cs" />
+    <Compile Include="NVAPI\EValues_ANSEL_ALLOWLISTED.cs" />
+    <Compile Include="NVAPI\EValues_ANSEL_ENABLE.cs" />
+    <Compile Include="NVAPI\EValues_AO_MODE.cs" />
+    <Compile Include="NVAPI\EValues_AO_MODE_ACTIVE.cs" />
+    <Compile Include="NVAPI\EValues_APPLICATION_PROFILE_NOTIFICATION_TIMEOUT.cs" />
+    <Compile Include="NVAPI\EValues_AUTO_LODBIASADJUST.cs" />
+    <Compile Include="NVAPI\EValues_BATTERY_BOOST_APP_FPS.cs" />
+    <Compile Include="NVAPI\EValues_CPL_HIDDEN_PROFILE.cs" />
+    <Compile Include="NVAPI\EValues_EXPORT_PERF_COUNTERS.cs" />
+    <Compile Include="NVAPI\EValues_EXPORT_PERF_COUNTERS_DX9_ONLY.cs" />
+    <Compile Include="NVAPI\EValues_EXTERNAL_QUIET_MODE.cs" />
+    <Compile Include="NVAPI\EValues_FRL_FPS.cs" />
+    <Compile Include="NVAPI\EValues_FXAA_ALLOW.cs" />
+    <Compile Include="NVAPI\EValues_FXAA_ENABLE.cs" />
+    <Compile Include="NVAPI\EValues_FXAA_INDICATOR_ENABLE.cs" />
+    <Compile Include="NVAPI\EValues_LATENCY_INDICATOR_AUTOALIGN.cs" />
+    <Compile Include="NVAPI\EValues_LODBIASADJUST.cs" />
+    <Compile Include="NVAPI\EValues_MAXWELL_B_SAMPLE_INTERLEAVE.cs" />
+    <Compile Include="NVAPI\EValues_MCSFRSHOWSPLIT.cs" />
+    <Compile Include="NVAPI\EValues_NV_QUALITY_UPSCALING.cs" />
+    <Compile Include="NVAPI\EValues_OGL_AA_LINE_GAMMA.cs" />
+    <Compile Include="NVAPI\EValues_OGL_DEEP_COLOR_SCANOUT.cs" />
+    <Compile Include="NVAPI\EValues_OGL_DEFAULT_SWAP_INTERVAL.cs" />
+    <Compile Include="NVAPI\EValues_OGL_DEFAULT_SWAP_INTERVAL_FRACTIONAL.cs" />
+    <Compile Include="NVAPI\EValues_OGL_DEFAULT_SWAP_INTERVAL_SIGN.cs" />
+    <Compile Include="NVAPI\EValues_OGL_EVENT_LOG_SEVERITY_THRESHOLD.cs" />
+    <Compile Include="NVAPI\EValues_OGL_FORCE_BLIT.cs" />
+    <Compile Include="NVAPI\EValues_OGL_FORCE_STEREO.cs" />
+    <Compile Include="NVAPI\EValues_OGL_OVERLAY_PIXEL_TYPE.cs" />
+    <Compile Include="NVAPI\EValues_OGL_OVERLAY_SUPPORT.cs" />
+    <Compile Include="NVAPI\EValues_OGL_QUALITY_ENHANCEMENTS.cs" />
+    <Compile Include="NVAPI\EValues_OGL_SINGLE_BACKDEPTH_BUFFER.cs" />
+    <Compile Include="NVAPI\EValues_OGL_SLI_CFR_MODE.cs" />
+    <Compile Include="NVAPI\EValues_OGL_SLI_MULTICAST.cs" />
+    <Compile Include="NVAPI\EValues_OGL_THREAD_CONTROL.cs" />
+    <Compile Include="NVAPI\EValues_OGL_TMON_LEVEL.cs" />
+    <Compile Include="NVAPI\EValues_OGL_TRIPLE_BUFFER.cs" />
+    <Compile Include="NVAPI\EValues_OPTIMUS_MAXAA.cs" />
+    <Compile Include="NVAPI\EValues_PHYSXINDICATOR.cs" />
+    <Compile Include="NVAPI\EValues_PREFERRED_PSTATE.cs" />
+    <Compile Include="NVAPI\EValues_PRERENDERLIMIT.cs" />
+    <Compile Include="NVAPI\EValues_PREVENT_UI_AF_OVERRIDE.cs" />
+    <Compile Include="NVAPI\EValues_PS_SHADERDISKCACHE.cs" />
+    <Compile Include="NVAPI\EValues_PS_SHADERDISKCACHE_MAX_SIZE.cs" />
+    <Compile Include="NVAPI\EValues_PS_TEXFILTER_ANISO_OPTS2.cs" />
+    <Compile Include="NVAPI\EValues_PS_TEXFILTER_BILINEAR_IN_ANISO.cs" />
+    <Compile Include="NVAPI\EValues_PS_TEXFILTER_DISABLE_TRILIN_SLOPE.cs" />
+    <Compile Include="NVAPI\EValues_PS_TEXFILTER_NO_NEG_LODBIAS.cs" />
+    <Compile Include="NVAPI\EValues_QUALITY_ENHANCEMENTS.cs" />
+    <Compile Include="NVAPI\EValues_QUALITY_ENHANCEMENT_SUBSTITUTION.cs" />
+    <Compile Include="NVAPI\EValues_REFRESH_RATE_OVERRIDE.cs" />
+    <Compile Include="NVAPI\EValues_SET_POWER_THROTTLE_FOR_PCIe_COMPLIANCE.cs" />
+    <Compile Include="NVAPI\EValues_SET_VAB_DATA.cs" />
+    <Compile Include="NVAPI\EValues_SHIM_MCCOMPAT.cs" />
+    <Compile Include="NVAPI\EValues_SHIM_RENDERING_MODE.cs" />
+    <Compile Include="NVAPI\EValues_SHIM_RENDERING_OPTIONS.cs" />
+    <Compile Include="NVAPI\EValues_SLI_GPU_COUNT.cs" />
+    <Compile Include="NVAPI\EValues_SLI_PREDEFINED_GPU_COUNT.cs" />
+    <Compile Include="NVAPI\EValues_SLI_PREDEFINED_GPU_COUNT_DX10.cs" />
+    <Compile Include="NVAPI\EValues_SLI_PREDEFINED_MODE.cs" />
+    <Compile Include="NVAPI\EValues_SLI_PREDEFINED_MODE_DX10.cs" />
+    <Compile Include="NVAPI\EValues_SLI_RENDERING_MODE.cs" />
+    <Compile Include="NVAPI\EValues_VRPRERENDERLIMIT.cs" />
+    <Compile Include="NVAPI\EValues_VRRFEATUREINDICATOR.cs" />
+    <Compile Include="NVAPI\EValues_VRROVERLAYINDICATOR.cs" />
+    <Compile Include="NVAPI\EValues_VRRREQUESTSTATE.cs" />
+    <Compile Include="NVAPI\EValues_VRR_APP_OVERRIDE.cs" />
+    <Compile Include="NVAPI\EValues_VRR_APP_OVERRIDE_REQUEST_STATE.cs" />
+    <Compile Include="NVAPI\EValues_VRR_MODE.cs" />
+    <Compile Include="NVAPI\EValues_VSYNCMODE.cs" />
+    <Compile Include="NVAPI\EValues_VSYNCSMOOTHAFR.cs" />
+    <Compile Include="NVAPI\EValues_VSYNCTEARCONTROL.cs" />
+    <Compile Include="NVAPI\EValues_VSYNCVRRCONTROL.cs" />
+    <Compile Include="NVAPI\EValues_VSYNC_BEHAVIOR_FLAGS.cs" />
+    <Compile Include="NVAPI\EValues_WKS_API_STEREO_EYES_EXCHANGE.cs" />
+    <Compile Include="NVAPI\EValues_WKS_API_STEREO_MODE.cs" />
+    <Compile Include="NVAPI\EValues_WKS_MEMORY_ALLOCATION_POLICY.cs" />
+    <Compile Include="NVAPI\EValues_WKS_STEREO_DONGLE_SUPPORT.cs" />
+    <Compile Include="NVAPI\EValues_WKS_STEREO_SUPPORT.cs" />
+    <Compile Include="NVAPI\EValues_WKS_STEREO_SWAP_MODE.cs" />
+    <Compile Include="NVAPI\NVAPIDrsWrapper.cs" />
+    <Compile Include="NVAPI\NVAPI_STATUS.cs" />
+    <Compile Include="NVAPI\NVDRS_APPLICATION_V1.cs" />
+    <Compile Include="NVAPI\NVDRS_APPLICATION_V2.cs" />
+    <Compile Include="NVAPI\NVDRS_APPLICATION_V3.cs" />
+    <Compile Include="NVAPI\NVDRS_GPU_SUPPORT.cs" />
+    <Compile Include="NVAPI\NVDRS_PROFILE.cs" />
+    <Compile Include="NVAPI\NVDRS_SETTING.cs" />
+    <Compile Include="NVAPI\NVDRS_SETTING_LOCATION.cs" />
+    <Compile Include="NVAPI\NVDRS_SETTING_TYPE.cs" />
+    <Compile Include="NVAPI\NVDRS_SETTING_UNION.cs" />
+    <Compile Include="NVAPI\NVDRS_SETTING_VALUES.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

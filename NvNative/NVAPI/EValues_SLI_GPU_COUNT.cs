@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000034 RID: 52
+	public enum EValues_SLI_GPU_COUNT : uint
+	{
+		// Token: 0x04000204 RID: 516
+		SLI_GPU_COUNT_AUTOSELECT,
+		// Token: 0x04000205 RID: 517
+		SLI_GPU_COUNT_ONE,
+		// Token: 0x04000206 RID: 518
+		SLI_GPU_COUNT_TWO,
+		// Token: 0x04000207 RID: 519
+		SLI_GPU_COUNT_THREE,
+		// Token: 0x04000208 RID: 520
+		SLI_GPU_COUNT_FOUR,
+		// Token: 0x04000209 RID: 521
+		SLI_GPU_COUNT_NUM_VALUES,
+		// Token: 0x0400020A RID: 522
+		SLI_GPU_COUNT_DEFAULT = 0U
+	}
+}

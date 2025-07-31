@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x02000029 RID: 41
+	public enum EValues_FXAA_INDICATOR_ENABLE : uint
+	{
+		// Token: 0x040001A1 RID: 417
+		FXAA_INDICATOR_ENABLE_OFF,
+		// Token: 0x040001A2 RID: 418
+		FXAA_INDICATOR_ENABLE_ON,
+		// Token: 0x040001A3 RID: 419
+		FXAA_INDICATOR_ENABLE_NUM_VALUES,
+		// Token: 0x040001A4 RID: 420
+		FXAA_INDICATOR_ENABLE_DEFAULT = 0U
+	}
+}

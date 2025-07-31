@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace NvidiaX.NVIDIA.Native.NVAPI
+{
+	// Token: 0x0200004E RID: 78
+	public enum EValues_LODBIASADJUST : uint
+	{
+		// Token: 0x040002C3 RID: 707
+		LODBIASADJUST_MIN = 4294967168U,
+		// Token: 0x040002C4 RID: 708
+		LODBIASADJUST_MAX = 128U,
+		// Token: 0x040002C5 RID: 709
+		LODBIASADJUST_NUM_VALUES = 2U,
+		// Token: 0x040002C6 RID: 710
+		LODBIASADJUST_DEFAULT = 0U
+	}
+}
